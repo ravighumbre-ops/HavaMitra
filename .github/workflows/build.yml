@@ -1,4 +1,3 @@
-
 name: Build HavaMitra Marathi APK
 
 on:
@@ -30,7 +29,7 @@ jobs:
           cache: true
 
       - name: Create Android Flutter project files
-        run: flutter create --platforms=android .
+        run: flutter create --project-name hava_mitra_marathi --platforms=android .
 
       - name: Get dependencies
         run: flutter pub get
